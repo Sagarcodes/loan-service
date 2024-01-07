@@ -8,4 +8,6 @@ import java.util.List;
 public interface LoanDao extends JpaRepository<Loan, Integer> {
 
     List<Loan> findByUsername(String username);
+
+    Loan findByIdAndUsername(int id, String username);
 }
