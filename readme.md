@@ -27,3 +27,18 @@ Loan instalment has 2 type of status:
 2. POST /api/v1/loan/create - create a new loan. Request by user.
 3. PUT /api/v1/loan/approve - api for admin to approve loan.
 4. POST /api/v1/loan/instalment - pay loan instalment.
+
+## Local Setup
+**Prerequisite**
+1. java 17
+2. mysql
+
+**Setup**:
+1. Add values for following fields in application.properties
+* spring.datasource.url
+* spring.datasource.username
+* spring.datasource.password
+* application.security.jwt.secret-key=
+
+2. mvn compile
+3. mvn spring-boot:run
